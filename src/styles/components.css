@@ -13,7 +13,7 @@
 }
 
 .section-container {
-	@apply w-full bg-[var(--color-content-bg)] shadow-sm rounded rounded-b-lg min-h-110 transition-shadow duration-300 flex flex-col px-10 lg:px-8 md:px-6 sm:px-5 2xs:px-4 justify-center py-8 opacity-95 items-start scroll-mt-24;
+	@apply w-full bg-[var(--color-content-bg)] shadow-sm rounded rounded-b-lg transition-shadow duration-300 flex flex-col px-10 lg:px-8 md:px-6 sm:px-5 2xs:px-4 justify-center py-12 opacity-95 items-start scroll-mt-24;
 }
 
 .input {
