@@ -71,7 +71,7 @@ const projects = [
 		Body: [
 			"Built with React, Vite, TypeScript, Tailwind CSS and Zustand. Developed using AI-assisted tooling — I designed the architecture, made all technical decisions, reviewed and understood every line of code, and directed the implementation throughout.",
 		],
-		projectUrl: "https://visionary-medovik-5c48ba.netlify.app/",
+		projectUrl: "halkio-sushi.netlify.app",
 	},
 ]
 
