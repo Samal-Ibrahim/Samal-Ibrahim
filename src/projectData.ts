@@ -1,5 +1,6 @@
 import sp2 from "./assets/action-house.png"
 import cssFr from "./assets/css-tools.png"
+import gearup from "./assets/gearup.png"
 import halkio from "./assets/halkio-sushi.jpg"
 import holidaze from "./assets/holidaze.png"
 import jsFr from "./assets/zeebra.png"
@@ -7,6 +8,20 @@ import jsFr from "./assets/zeebra.png"
 const projects = [
 	{
 		id: 1,
+		name: "GearUp",
+		description:
+			"GearUp is a modern car marketplace app focused on helping users find the right vehicle with clear terms, practical filters, and a smooth browsing experience.",
+		tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+		imageUrl: gearup,
+		Body: [
+			"GearUp is a front-end project built to simulate a modern car marketplace where users can quickly explore trusted listings and compare options with confidence. The experience is centered around usability, with clear pricing details, clean card-based listings, and straightforward navigation across key pages like home, about, contact, and login.",
+			"The main focus of the project is practical filtering and decision support. Users can narrow results by deal type, availability, monthly budget range, and model year range, then sort listings to find the best fit faster. This creates a realistic browse-and-compare flow that mirrors how people evaluate cars before making a decision.",
+			"Overall, GearUp  highlights responsive UI design, structured front-end architecture, and a product-oriented user experience. The interface is built to feel approachable and trustworthy while still providing enough control for users to find a deal that matches their needs.",
+		],
+		projectUrl: "https://gearup-car.netlify.app/",
+	},
+	{
+		id: 2,
 		name: "CSS Frameworks CA",
 		description: "This project was a example of using CSS frameworks to build a page.",
 		tech: ["HTML", "Tailwind CSS", "JavaScript"],
@@ -20,7 +35,7 @@ const projects = [
 		githubUrl: "https://github.com/Samal-Ibrahim/css-frameworks-CA",
 	},
 	{
-		id: 2,
+		id: 3,
 		name: "Zeebra",
 		description:
 			"Zeebra was a project where I built a simple e-commerce site using React, fetching data from a public API and implementing a shopping cart.",
@@ -34,7 +49,7 @@ const projects = [
 		githubUrl: "https://github.com/NoroffFEU/jsfw-2025-v1-samal-jsframeworks",
 	},
 	{
-		id: 3,
+		id: 4,
 		name: "Auction House",
 		description:
 			"Auction House was a project where I built a marketplace app using React, fetching data from a custom API and implementing features like browsing listings, user profiles, and bidding.",
@@ -48,7 +63,7 @@ const projects = [
 		githubUrl: "https://github.com/Samal-Ibrahim/FED2-SP2-Auction-House",
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "Holidaze",
 		description:
 			"Holidaze was a project where I built a holiday booking app using React, fetching data from a custom API and implementing features like browsing listings, user profiles, and booking.",
@@ -62,7 +77,7 @@ const projects = [
 		githubUrl: "https://github.com/Samal-Ibrahim/PE2_Holidaze",
 	},
 	{
-		id: 5,
+		id: 6,
 		name: "Halkio Sushi",
 		description:
 			"Halkio Sushi is a Lithuania-based restaurant known for fresh, flavorful food. I recreated their single-page website from scratch, focusing on a clean layout and simple filtering functionality while ensuring the design stayed true to their brand identity.",
