@@ -18,9 +18,9 @@ export default function Button({
 
 	const variants = {
 		primary:
-			"bg-[var(--color-primary)] text-[var(--color-bg)] hover:bg-[var(--color-accent)] focus:ring-[var(--color-primary)]",
+			"bg-[var(--color-accent)] text-[var(--color-surface)] hover:bg-[var(--color-accent-hover)] focus:ring-[var(--color-accent)]",
 		secondary:
-			"bg-[var(--color-secondary)] text-[var(--color-text)] hover:bg-[var(--color-secondary)]/70 focus:ring-[var(--color-secondary)]",
+			"bg-[var(--color-surface-2)] text-[var(--color-text)] border border-[var(--color-border-soft)] hover:border-[var(--color-gold)] focus:ring-[var(--color-gold)]",
 		danger: "bg-red-600 text-white hover:bg-red-700 focus:ring-red-500",
 	}
 

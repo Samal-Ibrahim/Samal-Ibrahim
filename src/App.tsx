@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom"
 import Footer from "#src/components/Footer.js"
-import { Nav } from "#src/components/Nav.js"
+import { Nav } from "#src/components/Nav.tsx"
 import Contact from "#src/pages/Contact.js"
 import DetailedProject from "#src/pages/DetailedProject.js"
 import Home from "#src/pages/Home.js"
@@ -8,7 +8,7 @@ import _NotFound from "#src/pages/NotFound.js"
 
 function App() {
 	return (
-		<div className="grid grid-rows-[auto_1fr_auto] mx-auto min-h-screen container bg-white shadow-lg">
+		<div className="grid grid-rows-[auto_1fr_auto] mx-auto min-h-screen container bg-[var(--color-content-bg)] shadow-lg transition-colors duration-300">
 			<header className="row-start-1">
 				<Nav />
 			</header>
