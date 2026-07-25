@@ -7,23 +7,68 @@
 	-moz-osx-font-smoothing: grayscale;
 
 	/* fonts */
-	--font-family-logo: "Poppins", sans-serif;
-	--font-family-heading: "Poppins", sans-serif;
-	--font-family-button: "Noto Sans", serif;
+	--font-family-logo: "EB Garamond", serif;
+	--font-family-heading: "EB Garamond", serif;
+	--font-family-button: "Noto Sans", sans-serif;
 	--font-family-p: "Noto Sans", sans-serif;
 
-	/* colors */
-	--text: #050316;
-	--text-secondary: #f4f4f4;
+	/* Michelangelo — light (Carrara marble) */
+	--text: #2f2c28;
+	--text-muted: #6e6a61;
+	--text-soft: #87837a;
+	--text-secondary: #eceae2;
 
-	--bg: #f5f7fa;
+	--bg: #e8e6df;
+	--content-bg: #f2f0ec;
+	--surface: #faf9f6;
+	--surface-2: #e7e4dc;
 
-	--primary: #6e45a1;
-	--secondary: #c7c3f3;
-	--accent: #7845a1;
+	--primary: #a34a2a;
+	--secondary: #e7e4dc;
+	--accent: #a34a2a;
+	--accent-hover: #8a3f24;
+	--gold: #b08d45;
+	--green: #5c7360;
+	--section-hover: #ffffff40;
 
-	--bg-nav: #3e345b;
-	--footer-bg: #322658;
+	--border-soft: #d8d5cc;
+	--border-strong: #2f2c28;
+
+	--bg-nav: #f2f0ec;
+	--footer-bg: #2f2c28;
+	--monogram-bg: #2f2c28;
+	--monogram-text: #f2f0ec;
+}
+
+.dark {
+	/* Michelangelo — dark (the unlit chapel) */
+	color-scheme: dark;
+
+	--text: #eceae2;
+	--text-muted: #96917f;
+	--text-soft: #a59f8d;
+	--text-secondary: #eceae2;
+
+	--bg: #191613;
+	--content-bg: #211e1a;
+	--surface: #2a2620;
+	--surface-2: #37332b;
+
+	--primary: #c4714a;
+	--secondary: #37332b;
+	--accent: #c4714a;
+	--accent-hover: #d08055;
+	--gold: #cfa14f;
+	--green: #8fa68f;
+	--section-hover: #00000040;
+
+	--border-soft: #454035;
+	--border-strong: #cfa14f;
+
+	--bg-nav: #211e1a;
+	--footer-bg: #14110e;
+	--monogram-bg: #e8e4d8;
+	--monogram-text: #211e1a;
 }
 
 @theme {
@@ -34,15 +79,31 @@
 
 	/* Colors */
 	--color-bg: var(--bg);
+	--color-content-bg: var(--content-bg);
+	--color-surface: var(--surface);
+	--color-surface-2: var(--surface-2);
 
 	--color-primary: var(--primary);
+	--color-secondary: var(--secondary);
 
 	--color-text: var(--text);
+	--color-text-muted: var(--text-muted);
+	--color-text-soft: var(--text-soft);
 	--color-text-secondary: var(--text-secondary);
 
 	--color-accent: var(--accent);
+	--color-accent-hover: var(--accent-hover);
+	--color-gold: var(--gold);
+	--color-green: var(--green);
+	--color-section-hover: var(--section-hover);
+
+	--color-border-soft: var(--border-soft);
+	--color-border-strong: var(--border-strong);
+
 	--color-bg-nav: var(--bg-nav);
 	--color-footer-bg: var(--footer-bg);
+	--color-monogram-bg: var(--monogram-bg);
+	--color-monogram-text: var(--monogram-text);
 
 	/* breakpoints */
 	--breakpoint-2xs: 375px;

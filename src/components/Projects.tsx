@@ -1,58 +1,67 @@
-import { Link } from "react-router-dom"
-import projectData from "../projectData.js"
-export default function Projects() {
-	return (
-		<div className="flex flex-col gap-5 w-full mt-8">
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-				{projectData.map((project) => (
-					<div
-						key={project.id}
-						className="relative shadow-lg rounded-lg flex flex-col justify-between gap-2 p-4 hover:shadow active:shadow-md active:shadow-[#5c42b19c] transition-shadow duration-200"
-					>
-						<Link
-							to={`/projects/${project.id}`}
-							className="absolute inset-0 z-0"
-							aria-label={`View ${project.name}`}
-						/>
+import { SHOW_PLATE_NUMBERS } from "#src/data/portfolio.js"
+import { otherProjects } from "#src/data/projects.js"
 
-						<div className="flex flex-col gap-2">
-							<img
-								src={project.imageUrl}
-								alt={project.name}
-								className="w-full h-48 object-cover rounded-md"
-							/>
-							<h2 className="text-xl font-semibold ">{project.name}</h2>
-							<p className="text-gray-600">{project.description}</p>
+/** The plate grid — every project except the featured one. */
+export default function Projects() {
+	const projects = otherProjects
+
+	return (
+		<div className="grid w-full grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
+			{projects.map((project) => (
+				<article
+					key={project.id}
+					className="flex flex-col gap-3.5 border border-border-soft bg-content-bg p-3 pb-5 transition-shadow duration-200  hover:shadow-md"
+				>
+					<img
+						src={project.imageUrl}
+						alt={project.name}
+						className="h-44 w-full border border-border-soft bg-surface object-cover object-top"
+					/>
+					<div className="flex flex-1 flex-col gap-2.5 px-2">
+						<div className="flex items-baseline justify-between gap-3">
+							<h3 className="text-[21px]">{project.name}</h3>
+							{SHOW_PLATE_NUMBERS && project.plate && (
+								<span className="inscription whitespace-nowrap text-[0.66rem] text-gold">
+									{project.plate}
+								</span>
+							)}
 						</div>
-						<div className="relative">
-							<div className="bg-gray-100 p-2 w-full rounded-md shadow-sm">
-								<p className="text-[#000000ac] ">{project.tech.join(", ")}</p>
-							</div>
-							<div>
+						<p className="text-sm leading-relaxed text-text-muted">
+							{project.blurb ?? project.description}
+						</p>
+						<div className="mt-auto flex flex-wrap gap-1.5 pt-1.5">
+							{project.tech.slice(0, 3).map((tech) => (
+								<span
+									key={tech}
+									className="rounded border border-border-soft px-2 py-0.5 text-[11.5px] font-medium text-text-muted"
+								>
+									{tech}
+								</span>
+							))}
+						</div>
+						<div className="mt-1 flex gap-4.5 border-t border-border-soft pt-3">
+							<a
+								href={project.projectUrl}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-[13px] font-semibold text-accent hover:text-accent-hover hover:underline"
+							>
+								Live site
+							</a>
+							{project.githubUrl && (
 								<a
-									href={project.projectUrl}
+									href={project.githubUrl}
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-accent mt-2 z-20 inline-block hover:underline hover:text-[#502EBF]"
+									className="text-[13px] font-semibold text-text-soft hover:text-accent"
 								>
-									View Project
+									Code
 								</a>
-
-								{project.githubUrl && (
-									<a
-										href={project.githubUrl}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="text-accent mt-2 z-20 inline-block ml-4 hover:underline hover:text-[#502EBF]"
-									>
-										View on GitHub
-									</a>
-								)}
-							</div>
+							)}
 						</div>
 					</div>
-				))}
-			</div>
+				</article>
+			))}
 		</div>
 	)
 }

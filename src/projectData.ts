@@ -11,19 +11,22 @@ const projects = [
 		name: "GearUp",
 		description:
 			"GearUp is a modern car marketplace app focused on helping users find the right vehicle with clear terms, practical filters, and a smooth browsing experience.",
-		tech: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+		tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Express", "Prisma", "PostgreSQL"],
 		imageUrl: gearup,
 		Body: [
-			"GearUp is a front-end project built to simulate a modern car marketplace where users can quickly explore trusted listings and compare options with confidence. The experience is centered around usability, with clear pricing details, clean card-based listings, and straightforward navigation across key pages like home, about, contact, and login.",
-			"The main focus of the project is practical filtering and decision support. Users can narrow results by deal type, availability, monthly budget range, and model year range, then sort listings to find the best fit faster. This creates a realistic browse-and-compare flow that mirrors how people evaluate cars before making a decision.",
-			"Overall, GearUp  highlights responsive UI design, structured front-end architecture, and a product-oriented user experience. The interface is built to feel approachable and trustworthy while still providing enough control for users to find a deal that matches their needs.",
+			"GearUp is a full-stack car marketplace project where users can browse listings and compare options. The front end delivers a clean, responsive experience with card-based listings, clear pricing details, and simple navigation across home, about, contact, and login pages.",
+			"The core of the experience is filtering and sorting: users can narrow results by deal type, availability, monthly budget range, and model year range, then sort listings to find what fits — a realistic browse-and-compare flow.",
+			"The backend is built with Express and Prisma, talking to a PostgreSQL database on Railway. Login works with JWT and bcrypt-hashed passwords, and Zod keeps the incoming data validated. It rounds the project off from a pure front-end demo into a working full-stack app.",
 		],
 		projectUrl: "https://gearup-car.netlify.app/",
+		frontendUrl: "https://github.com/Samal-Ibrahim/gearup-client",
+		backendUrl: "https://github.com/Samal-Ibrahim/gearup-server"
 	},
 	{
 		id: 2,
 		name: "CSS Frameworks CA",
-		description: "This project was a example of using CSS frameworks to build a page.",
+		description:
+			"A course assignment showcasing responsive design and Tailwind customization on a social-style layout with feed, profile, and login pages.",
 		tech: ["HTML", "Tailwind CSS", "JavaScript"],
 		imageUrl: cssFr,
 		Body: [
@@ -38,7 +41,7 @@ const projects = [
 		id: 3,
 		name: "Zeebra",
 		description:
-			"Zeebra was a project where I built a simple e-commerce site using React, fetching data from a public API and implementing a shopping cart.",
+			"An e-commerce site built with React and TypeScript — live product data, search and sorting, a persistent cart, and a full checkout flow.",
 		tech: ["TypeScript", "React", "React-Router", "Tailwind CSS", "Biome", "Vite", "Vitest"],
 		imageUrl: jsFr,
 		Body: [
@@ -52,7 +55,7 @@ const projects = [
 		id: 4,
 		name: "Auction House",
 		description:
-			"Auction House was a project where I built a marketplace app using React, fetching data from a custom API and implementing features like browsing listings, user profiles, and bidding.",
+			"A marketplace where users register, create listings, and bid on auctions in real time — complete with profiles, credits, and win history.",
 		tech: ["JavaScript", "Vite", "Tailwind CSS"],
 		imageUrl: sp2,
 		Body: [
@@ -66,7 +69,7 @@ const projects = [
 		id: 5,
 		name: "Holidaze",
 		description:
-			"Holidaze was a project where I built a holiday booking app using React, fetching data from a custom API and implementing features like browsing listings, user profiles, and booking.",
+			"A holiday booking platform where users browse venues, filter results, and book stays through a date-based flow with full auth support.",
 		tech: ["JavaScript", "Vite", "Tailwind CSS", "React"],
 		imageUrl: holidaze,
 		Body: [
@@ -86,7 +89,7 @@ const projects = [
 		Body: [
 			"Built with React, Vite, TypeScript, Tailwind CSS and Zustand. Developed using AI-assisted tooling — I designed the architecture, made all technical decisions, reviewed and understood every line of code, and directed the implementation throughout.",
 		],
-		projectUrl: "halkio-sushi.netlify.app",
+		projectUrl: "https://halkio-sushi.netlify.app",
 	},
 ]
 

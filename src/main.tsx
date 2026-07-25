@@ -7,6 +7,12 @@ import "#src/styles/index.css"
 
 const queryClient = new QueryClient()
 
+const storedTheme = localStorage.getItem("theme")
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
+if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+	document.documentElement.classList.add("dark")
+}
+
 const rootElement = document.getElementById("root")
 if (!rootElement) throw new Error("Root element not found")
 

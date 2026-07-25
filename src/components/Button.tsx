@@ -17,10 +17,8 @@ export default function Button({
 		"font-semibold rounded-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
 
 	const variants = {
-		primary:
-			"bg-[var(--color-primary)] text-[var(--color-bg)] hover:bg-[var(--color-accent)] focus:ring-[var(--color-primary)]",
-		secondary:
-			"bg-[var(--color-secondary)] text-[var(--color-text)] hover:bg-[var(--color-secondary)]/70 focus:ring-[var(--color-secondary)]",
+		primary: "bg-accent text-surface hover:bg-accent-hover focus:ring-accent",
+		secondary: "bg-surface-2 text-text border border-border-soft hover:border-gold focus:ring-gold",
 		danger: "bg-red-600 text-white hover:bg-red-700 focus:ring-red-500",
 	}
 
