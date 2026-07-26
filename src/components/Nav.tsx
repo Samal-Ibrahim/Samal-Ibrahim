@@ -5,13 +5,13 @@ const links = [{ to: "/contact", label: "Contact" }]
 
 export const Nav = () => {
 	return (
-		<nav className="sticky top-0 z-30 border-b-2 border-border-strong bg-bg-nav transition-colors duration-300">
-			<div className="mx-auto flex w-full max-w-[1180px] items-center justify-between gap-6 px-10 py-3.5 lg:px-8 md:px-6 sm:px-5 2xs:px-4  2xs:flex-col-reverse md:flex-row">
+		<nav className="sticky w-full top-0 z-30 border-b-2 border-border-strong bg-bg-nav transition-colors duration-300">
+			<div className="mx-auto flex w-full items-center justify-between gap-6 px-10 py-3.5 lg:px-8 md:px-6 sm:px-5 2xs:px-4  2xs:flex-col-reverse md:flex-row">
 				<Link to="/" className="flex items-center gap-3">
 					<span className="monogram px-2.5 py-1.5 text-xl" aria-hidden="true">
 						S
 					</span>
-					<span className="font-[family-name:var(--font-family-heading)] text-[19px] tracking-wide text-text">
+					<span className="font-[family-name:var(--font-family-heading)] tracking-wide text-text">
 						Samal Ibrahim
 					</span>
 				</Link>

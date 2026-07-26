@@ -19,7 +19,7 @@ const cvFile = new URL("../assets/Samal-Ibrahim-cv.pdf", import.meta.url).href
 
 export default function Home() {
 	return (
-		<div className="mx-auto flex max-w-[1180px] flex-col gap-22 px-10 pb-26 lg:px-8 md:px-6 sm:px-5 2xs:gap-14 2xs:px-4 ">
+		<div className="mx-auto flex container flex-col gap-22 px-10 pb-26 lg:px-8 md:px-6 sm:px-5 2xs:gap-14 2xs:px-4 ">
 			{/* Hero */}
 			<Section
 				id="top"
@@ -55,9 +55,9 @@ export default function Home() {
 							Get in touch
 						</a>
 					</div>
-					<ul className="mt-2 justify-center flex w-full flex-wrap gap-10 border-t border-border-soft pt-5">
+					<ul className="mt-2 justify-center flex w-full flex-wrap 2xs:flex-col 2xs:items-center gap-10 border-t border-border-soft pt-5 sm:flex-row lg:gap-5 xl:gap-10 ">
 						{HERO.facts.map((fact) => (
-							<li key={fact.label} className="flex flex-col gap-0.5 pt-5">
+							<li key={fact.label} className="flex flex-col 2xs:items-center gap-0.5 pt-5">
 								<span className="font-[family-name:var(--font-family-heading)] text-[27px]">
 									{fact.value}
 								</span>

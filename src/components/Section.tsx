@@ -12,7 +12,7 @@ export const Section = ({ id, children, className = "", ...props }: SectionProps
 		<section
 			ref={ref}
 			id={id}
-			className={`transition-colors duration-500 ${
+			className={`transition-colors duration-500 container ${
 				isInView ? "bg-section-hover" : ""
 			} ${className}`}
 			{...props}
