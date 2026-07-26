@@ -6,7 +6,7 @@ type SectionHeadingProps = {
 
 export default function SectionHeading({ index, title, note }: SectionHeadingProps) {
 	return (
-		<div className="flex  2xs:flex-col justify-between items-baseline gap-4 ">
+		<div className="flex  2xs:flex-col md:flex-row justify-between items-baseline gap-4 ">
 			<div className="flex items-baseline gap-4 ">
 				<span className="font-[family-name:var(--font-family-heading)] text-[15px] tracking-wider text-gold">
 					{index}
