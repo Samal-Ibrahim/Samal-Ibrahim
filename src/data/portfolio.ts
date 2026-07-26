@@ -76,7 +76,7 @@ export const EDUCATION = [
 		note: "React, TypeScript, modern web development and API integration.",
 	},
 	{
-		title: "CS50: Introduction to Computer Science",
+		title: "CS50: Introduction to Computer Science Certificate",
 		meta: "Harvard University · February 2026",
 		note: "C and memory, data structures and algorithms, SQL, Flask, auth and sessions.",
 	},
