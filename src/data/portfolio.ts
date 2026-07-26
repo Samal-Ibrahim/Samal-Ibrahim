@@ -15,7 +15,7 @@ export const SHOW_PLATE_NUMBERS = true
 export const CONTACT = {
 	label: "V · Contact",
 	heading: "Get in touch",
-	body: "Questions about any of the work above, or the code behind it? I reply within a day.",
+	body: "",
 	cta: "Send a message",
 	portraitCaption: "Front-end developer, Oslo. React, TypeScript and REST APIs.",
 }
@@ -37,7 +37,7 @@ export const SKILL_GROUPS = [
 	{
 		title: "State & data",
 		level: "confident",
-		items: ["REST APIs", "TanStack Query", "React Context", "Zustand", "JWT auth", "localStorage"],
+		items: ["REST APIs", "TanStack Query", "React Context", "JWT auth", "localStorage"],
 	},
 	{
 		title: "Tooling & foundations",
