@@ -112,3 +112,7 @@ li {
 	height: 1px;
 	background-color: var(--color-border-soft);
 }
+
+.section-hover {
+	@apply transition-colors duration-500;
+}

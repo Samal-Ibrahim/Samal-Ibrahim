@@ -19,6 +19,8 @@ const projects = [
 			"The backend is built with Express and Prisma, talking to a PostgreSQL database on Railway. Login works with JWT and bcrypt-hashed passwords, and Zod keeps the incoming data validated. It rounds the project off from a pure front-end demo into a working full-stack app.",
 		],
 		projectUrl: "https://gearup-car.netlify.app/",
+		frontendUrl: "https://github.com/Samal-Ibrahim/gearup-client",
+		backendUrl: "https://github.com/Samal-Ibrahim/gearup-server"
 	},
 	{
 		id: 2,

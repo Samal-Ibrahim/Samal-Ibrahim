@@ -10,26 +10,15 @@ export const HERO = {
 	],
 } as const
 
-/** Set to true to show the "looking to be hired" framing. */
-export const SHOW_HIRING_PITCH = false
-/** Set to false to hide the "Plate I…VI" inscriptions. */
 export const SHOW_PLATE_NUMBERS = true
 
-export const CONTACT = SHOW_HIRING_PITCH
-	? {
-			label: "V · Commissions",
-			heading: "Looking for a junior front-end developer?",
-			body: "I reply within a day, and I'm happy to walk through any of the works above — code included.",
-			cta: "Email me",
-			portraitCaption: "Front-end developer, Oslo. React, TypeScript, REST. Open to junior roles.",
-		}
-	: {
-			label: "V · Contact",
-			heading: "Get in touch",
-			body: "Questions about any of the work above, or the code behind it? I reply within a day.",
-			cta: "Send a message",
-			portraitCaption: "Front-end developer, Oslo. React, TypeScript and REST APIs.",
-		}
+export const CONTACT = {
+	label: "V · Contact",
+	heading: "Get in touch",
+	body: "Questions about any of the work above, or the code behind it? I reply within a day.",
+	cta: "Send a message",
+	portraitCaption: "Front-end developer, Oslo. React, TypeScript and REST APIs.",
+}
 
 export const DETAILS = {
 	email: "samal.ibrahim1999@gmail.com",

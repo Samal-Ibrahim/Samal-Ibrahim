@@ -29,6 +29,7 @@
 	--accent-hover: #8a3f24;
 	--gold: #b08d45;
 	--green: #5c7360;
+	--section-hover: #ffffff40;
 
 	--border-soft: #d8d5cc;
 	--border-strong: #2f2c28;
@@ -59,6 +60,7 @@
 	--accent-hover: #d08055;
 	--gold: #cfa14f;
 	--green: #8fa68f;
+	--section-hover: #00000040;
 
 	--border-soft: #454035;
 	--border-strong: #cfa14f;
@@ -93,6 +95,7 @@
 	--color-accent-hover: var(--accent-hover);
 	--color-gold: var(--gold);
 	--color-green: var(--green);
+	--color-section-hover: var(--section-hover);
 
 	--color-border-soft: var(--border-soft);
 	--color-border-strong: var(--border-strong);

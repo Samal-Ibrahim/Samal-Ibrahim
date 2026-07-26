@@ -1,35 +1,59 @@
 export default function Contact() {
 	return (
-		<div className="flex flex-col justify-center items-center min-h-screen">
-			<div className="bg-[var(--color-surface)] border border-[var(--color-border-soft)] border-t-3 border-t-[var(--color-accent)] p-8 rounded shadow-md w-full max-w-lg flex flex-col gap-6 transition-colors duration-300">
-				<h1 className="mb-4 font-bold text-text">Contact</h1>
-				<p className="mb-8 italic text-[var(--color-text-muted)]">Get in touch.</p>
-				<ul className="text-lg flex flex-col gap-2 bg-[var(--color-surface-2)] p-8 rounded">
-					<li>ibrahim.samal1999@gmail.com</li>
-					<li>+47 465 98 356</li>
-					<li>
-						LinkedIn:{" "}
+		<div className="flex items-center justify-center min-h-screen px-4">
+			<div className="w-full max-w-md">
+				{/* Header */}
+				<div className="mb-8">
+					<h1 className="text-3xl font-bold">Get in touch</h1>
+					<div className="mt-2 h-1 w-12 bg-accent rounded-full" />
+				</div>
+
+				{/* Contact card */}
+				<div className="bg-surface border border-border-soft rounded-lg p-8 shadow-sm space-y-6">
+					{/* Email */}
+					<div>
+						<p className="text-sm text-text-muted mb-1 uppercase tracking-wide">Email</p>
+						<a
+							href="mailto:ibrahim.samal1999@gmail.com"
+							className="text-base hover:text-accent transition-colors"
+						>
+							samal.ibrahim.1999@gmail.com
+						</a>
+					</div>
+
+					{/* Phone */}
+					<div>
+						<p className="text-sm text-text-muted mb-1 uppercase tracking-wide">Phone</p>
+						<a href="tel:+4746598356" className="text-base hover:text-accent transition-colors">
+							+47 465 98 356
+						</a>
+					</div>
+
+					{/* Divider */}
+					<div className="border-t border-border-soft" />
+
+					{/* Social links */}
+					<div className="space-y-3">
 						<a
 							href="https://linkedin.com/in/samal-ibrahim"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-accent border-b border-[var(--color-gold)] hover:text-[var(--color-accent-hover)]"
+							className="flex items-center gap-2 text-base text-accent hover:text-accent-hover transition-colors"
 						>
-							linkedin.com/in/samal-ibrahim
+							LinkedIn
+							<span className="text-text-muted">↗</span>
 						</a>
-					</li>
-					<li>
-						GitHub:{" "}
 						<a
 							href="https://github.com/samal-ibrahim"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="text-accent border-b border-[var(--color-gold)] hover:text-[var(--color-accent-hover)]"
+							className="flex items-center gap-2 text-base text-accent hover:text-accent-hover transition-colors"
 						>
-							github.com/samal-ibrahim
+							GitHub
+							<span className="text-text-muted">↗</span>
 						</a>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	)

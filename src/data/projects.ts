@@ -1,18 +1,13 @@
 import projectData from "#src/projectData.js"
 
-/**
- * Extra presentation fields layered on top of projectData by id,
- * so projectData.ts stays the single source of truth for content.
- */
 type ProjectMeta = {
 	featured?: boolean
 	plate?: string
-	/** Short card copy — one line, what it is */
 	blurb?: string
-	/** Featured card only */
 	caseSummary?: string
 	role?: string
-	hardPart?: string
+	frontendUrl?: string
+	backendUrl?: string
 }
 
 const meta: Record<number, ProjectMeta> = {
@@ -21,8 +16,9 @@ const meta: Record<number, ProjectMeta> = {
 		plate: "Plate I",
 		caseSummary:
 			"Buying a used car means comparing dozens of near-identical listings. GearUp makes the comparison the product: filter by deal type, monthly budget and model year, then sort to a shortlist in a few clicks.",
-		role: "Design & front-end build",
-		hardPart: "Composable filter + sort state that stays shareable",
+		role: "Design, back-end & front-end build",
+		backendUrl: "https://github.com/Samal-Ibrahim/gearup-server",
+		frontendUrl: "https://github.com/Samal-Ibrahim/gearup-client"
 	},
 	5: {
 		plate: "Plate II",
@@ -48,7 +44,6 @@ const meta: Record<number, ProjectMeta> = {
 	},
 }
 
-/** Display order on the home page: featured first, then plates II — VI. */
 const order = [1, 5, 3, 4, 6, 2]
 
 export type Project = (typeof projectData)[number] & ProjectMeta
