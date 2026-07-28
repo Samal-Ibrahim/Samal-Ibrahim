@@ -1,75 +1,48 @@
-# Samal Ibrahim Portfolio
+# Hi, I'm Samal Ibrahim 👋
 
-A personal portfolio website built with React and TypeScript to present selected front-end projects, technical skills, and contact information in a clean and responsive layout.
+Front-end developer based in Norway, building clean and responsive web apps with React and TypeScript.
 
-## Description
+🌐 **[samalibrahim.com](https://samalibrahim.com)** · 💼 [LinkedIn](https://www.linkedin.com/in/samal-ibrahim) · 📫 ibrahim.samal1999@gmail.com
 
-This project is a multi-page portfolio application created to showcase my development work and learning progress.
+## About Me
 
-It includes:
+- 🎓 Front-end development, with curiosity for the backend
+- 💻 Focused on building accessible, responsive user interfaces
+- 🌱 Currently deepening my skills in React, TypeScript, and modern tooling
 
-- A homepage introduction and overview
-- A projects section with detailed project pages
-- Routing with dedicated pages for contact and not-found handling
-- Responsive design with reusable components and shared styling
+## Tech Stack
 
-## Built With
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-This project uses the following tech stack:
+## Featured Project — Portfolio Website
 
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [React Router](https://reactrouter.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Vite](https://vite.dev/)
-- [Biome](https://biomejs.dev/)
+My personal portfolio, live at **[samalibrahim.com](https://samalibrahim.com)** — and it's this repo! A multi-page React + TypeScript app with routing, reusable components, and a fully responsive layout.
 
-## Getting Started
+<!-- Add a screenshot: put e.g. public/preview.png in the repo and uncomment the line below -->
+<!-- ![Portfolio preview](public/preview.png) -->
 
-### Installing
+**Built with:** React · TypeScript · React Router · Tailwind CSS · Vite · Biome
 
-To get this project running locally:
-
-1. Clone the repository:
+<details>
+<summary>🔧 Run it locally</summary>
 
 ```bash
 git clone git@github.com:Samal-Ibrahim/Samal-Ibrahim.git
-```
-
-2. Install dependencies:
-
-```bash
+cd Samal-Ibrahim
 npm install
+npm run dev     # development server
+npm run build   # production build
 ```
 
-### Running
+</details>
 
-To run the development server:
+## GitHub Stats
 
-```bash
-npm run dev
-```
-
-To build for production:
-
-```bash
-npm run build
-```
-
-## Contributing
-
-Contributions are welcome. If you want to contribute, please open an issue first to discuss the change, then submit a pull request for review.
-
-## Contact
-
-- Email: ibrahim.samal1999@gmail.com
-- LinkedIn: [linkedin.com/in/samal-ibrahim](https://www.linkedin.com/in/samal-ibrahim)
-
-## License
-
-No license has been added yet. If needed, this section will be updated with a license file.
-
-## Acknowledgments
-
-- Noroff Front-End studies and project briefs
-- Open-source tools and documentation from the React, Vite, Tailwind, and TypeScript communities
+![Samal's GitHub stats](https://github-readme-stats.vercel.app/api?username=Samal-Ibrahim&show_icons=true&theme=default)
