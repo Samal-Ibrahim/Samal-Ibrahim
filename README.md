@@ -2,7 +2,7 @@
 
 Front-end developer based in Norway, building clean and responsive web apps with React and TypeScript.
 
-🌐 **[samalibrahim.com](https://samalibrahim.com)** · 💼 [LinkedIn](https://www.linkedin.com/in/samal-ibrahim) · 📫 ibrahim.samal1999@gmail.com
+🌐 **[samalibrahim.com](https://samalibrahim.com)** · 💼 [LinkedIn](https://www.linkedin.com/in/samal-ibrahim) · 📫 samal.ibrahim1999@gmail.com
 
 ## About Me
 
@@ -45,4 +45,4 @@ npm run build   # production build
 
 ## GitHub Stats
 
-![Samal's GitHub stats](https://github-readme-stats.vercel.app/api?username=Samal-Ibrahim&show_icons=true&theme=default)
+![Samal's GitHub stats](./profile/stats.svg)
